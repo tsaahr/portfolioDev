@@ -1,5 +1,6 @@
 var _Height = 0
 var _Width = 0
+var lifes = 1
 
 function ajustaTamanho(){
     _Height = window.innerHeight
@@ -13,7 +14,13 @@ function posicaoRandomica() {
 
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
-        
+        if (lifes > 3) {
+            alert ('Interromper o jogo(game over)')
+        }
+        else {
+        document.getElementById('v' + lifes).src= "images/coracao_vazio.png"
+        lifes ++
+        }
     }
 
     var positionX = Math.floor(Math.random() * (_Width - 90));
