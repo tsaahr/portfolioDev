@@ -13,9 +13,10 @@ ajustaTamanho()
 
 var timer = setInterval (function() {
     time -= 1
-    if (time < 0 ) {
+    if (time === 0 ) {
         clearInterval(timer)
         clearInterval(criaMosquito)
+        window.location.href = 'Win.html'
     }
     else {
     document.getElementById ('timer').innerHTML = time
