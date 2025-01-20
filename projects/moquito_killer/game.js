@@ -14,8 +14,8 @@ function posicaoRandomica() {
 
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
-        if (lifes > 3) {
-            alert ('Interromper o jogo(game over)')
+        if (lifes > 2) {
+            window.location.href = 'Game_Over.html'
         }
         else {
         document.getElementById('v' + lifes).src= "images/coracao_vazio.png"
@@ -26,23 +26,23 @@ function posicaoRandomica() {
     var positionX = Math.floor(Math.random() * (_Width - 90));
     var positionY = Math.floor(Math.random() * (_Height - 90));
 
-   positionX = positionX < 0 ? 0 : positionX
-   positionY = positionY < 0 ? 0 : positionY
+    positionX = positionX < 0 ? 0 : positionX
+    positionY = positionY < 0 ? 0 : positionY
 
-   console.log(positionX, positionY)
+    console.log(positionX, positionY)
 
-   var mosquito = document.createElement('img')
-   mosquito.src = 'images/mosquito.png'
-   mosquito.className = randomSize() + ' ' + randomSide() 
-   mosquito.style.left = positionX + 'px'
-   mosquito.style.top = positionY + 'px'
-   mosquito.style.position = 'absolute'
-   mosquito.id = 'mosquito'
-   mosquito.onclick = function () {
+    var mosquito = document.createElement('img')
+    mosquito.src = 'images/mosquito.png'
+    mosquito.className = randomSize() + ' ' + randomSide() 
+    mosquito.style.left = positionX + 'px'
+    mosquito.style.top = positionY + 'px'
+    mosquito.style.position = 'absolute'
+    mosquito.id = 'mosquito'
+    mosquito.onclick = function () {
     this.remove()
     }
 
-   document.body.appendChild (mosquito)
+    document.body.appendChild (mosquito)
 }
 
 function randomSize () {
