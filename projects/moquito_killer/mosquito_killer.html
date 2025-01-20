@@ -8,10 +8,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body onresize="ajustaTamanho()">
+  <div class="panel">
+    <div class="lifes"></div>
+
+    <div class="timer">Time remaining: ?</div>
+
+  </div>
 
   <script>
-     posicaoRandomica()
-
      setInterval (function () {
       posicaoRandomica()
      }, 1000)
