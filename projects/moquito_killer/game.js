@@ -1,6 +1,7 @@
 var _Height = 0
 var _Width = 0
 var lifes = 1
+var time = 10
 
 function ajustaTamanho(){
     _Height = window.innerHeight
@@ -9,6 +10,11 @@ function ajustaTamanho(){
 }
 
 ajustaTamanho()
+
+var timer = setInterval (function() {
+    document.getElementById ('timer').innerHTML = time
+    time -= 1
+}, 1000)
 
 function posicaoRandomica() {
 
