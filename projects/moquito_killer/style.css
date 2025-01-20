@@ -32,6 +32,7 @@ body{
     border-top: solid 1px #fff;
     background-color: #fff;
     opacity: 0.7;
+    left: 0px;
 }
 
 .lifes {

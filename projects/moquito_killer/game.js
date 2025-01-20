@@ -31,9 +31,11 @@ function posicaoRandomica() {
    mosquito.style.top = positionY + 'px'
    mosquito.style.position = 'absolute'
    mosquito.id = 'mosquito'
+   mosquito.onclick = function () {
+    this.remove()
+    }
 
    document.body.appendChild (mosquito)
-   randomSize()
 }
 
 function randomSize () {
