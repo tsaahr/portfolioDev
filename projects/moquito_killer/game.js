@@ -1,7 +1,7 @@
 var _Height = 0
 var _Width = 0
 var lifes = 1
-var time = 10
+var time = 5
 
 function ajustaTamanho(){
     _Height = window.innerHeight
@@ -12,8 +12,14 @@ function ajustaTamanho(){
 ajustaTamanho()
 
 var timer = setInterval (function() {
-    document.getElementById ('timer').innerHTML = time
     time -= 1
+    if (time < 0 ) {
+        clearInterval(timer)
+        clearInterval(criaMosquito)
+    }
+    else {
+    document.getElementById ('timer').innerHTML = time
+    }
 }, 1000)
 
 function posicaoRandomica() {
@@ -47,7 +53,6 @@ function posicaoRandomica() {
     mosquito.onclick = function () {
     this.remove()
     }
-
     document.body.appendChild (mosquito)
 }
 
