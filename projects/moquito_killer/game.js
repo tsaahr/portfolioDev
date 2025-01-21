@@ -1,7 +1,21 @@
 var _Height = 0
 var _Width = 0
 var lifes = 1
-var time = 5
+var time = 20
+var createMosquitotime = 1500
+
+var level = window.location.search
+level = level.replace('?', '')
+
+if (level === 'normal') {
+    createMosquitotime = 1500
+}
+else if (level === 'hard') {
+    createMosquitotime = 1000
+}
+else if (level === 'impossible') {
+    createMosquitotime = 750
+}
 
 function ajustaTamanho(){
     _Height = window.innerHeight
