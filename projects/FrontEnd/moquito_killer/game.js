@@ -30,7 +30,7 @@ var timer = setInterval (function() {
     if (time === 0 ) {
         clearInterval(timer)
         clearInterval(criaMosquito)
-        window.location.href = 'Win.html'
+        window.location.href = 'win.html'
     }
     else {
     document.getElementById ('timer').innerHTML = time
@@ -42,7 +42,7 @@ function posicaoRandomica() {
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
         if (lifes > 2) {
-            window.location.href = 'Game_Over.html'
+            window.location.href = 'game_over.html'
         }
         else {
         document.getElementById('v' + lifes).src= "images/coracao_vazio.png"
