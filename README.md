@@ -9,7 +9,7 @@ This repository includes projects and code snippets in:
 - 🛠️ **Other Technologies:** Various experiments and small projects  
 
 ## 📢 Connect with me  
-- 💼 [LinkedIn](https://www.linkedin.com/in/lithierry-pereira-5a608b265/)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/lithierrydevforce/)  
 - 🏗️ [GitHub](https://github.com/tsaahr)  
 
 Feel free to explore, learn, and contribute! 🚀  
